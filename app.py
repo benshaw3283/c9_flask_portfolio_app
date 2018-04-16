@@ -15,7 +15,7 @@ def home_page():
 
 @app.route('/<name>')
 def profile(name):
-	new_name = str(name) + "is a gimp"
+	new_name = str(name) + " is a gimp"
 	return render_template('index.html', name=new_name)
 
 
